@@ -15,13 +15,51 @@ Else
 6.	Return 0
  
 Program:
+```
+#include <stdio.h>
+#include <string.h>
+struct Person {
+    char name[50];
+    int age;
+    char gender[10];
+};
 
-//type your code here
+void checkEligibility(struct Person p) {
+    if (p.age >= 18) {
+        printf("%s is eligible for the vaccine.\n", p.name);
+    } else {
+        printf("%s is not eligible for the vaccine.\n", p.name);
+    }
+}
 
+int main() {
+    int n;
+    printf("Enter the number of people: ");
+    scanf("%d", &n);
+    
+    struct Person people[n];
 
+    for (int i = 0; i < n; i++) {
+        printf("\nEnter details for person %d\n", i + 1);
+        printf("Enter name: ");
+        scanf(" %[^\n]s", people[i].name); 
+        printf("Enter age: ");
+        scanf("%d", &people[i].age);
+        printf("Enter gender: ");
+        scanf("%s", people[i].gender);
+    }
+
+    for (int i = 0; i < n; i++) {
+        checkEligibility(people[i]);
+    }
+
+    return 0;
+}
+```
 Output:
 
-//paste your output here
+![Screenshot 2025-04-25 153652](https://github.com/user-attachments/assets/a1899a08-8999-4e96-816f-1085cf12b2c7)
+
 
 
 Result:
@@ -43,18 +81,41 @@ Algorithm:
 7.	Return 0
  
 Program:
+```
+#include <stdio.h>
+#include <string.h>
+struct Student {
+    char name[50];
+    int age;
+    float marks;
+};
 
-//type your code here
+void printStudentInfo(struct Student s) {
+    printf("Student Name: %s\n", s.name);
+    printf("Student Age: %d\n", s.age);
+    printf("Student Marks: %.2f\n", s.marks);
+}
+struct Student createStudent(char name[], int age, float marks) {
+    struct Student newStudent;
+    strcpy(newStudent.name, name);
+    newStudent.age = age;
+    newStudent.marks = marks;
+    
+    return newStudent;
+}
 
-
-
-
+int main() {
+    struct Student student1 = {"Anu", 20, 88.5};
+    printf("Passing structure as function argument:\n");
+    printStudentInfo(student1);
+    struct Student student2 = createStudent("Amitha", 22, 92.5);
+    printf("\nReturning structure from function:\n");
+    printStudentInfo(student2);
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
+![Screenshot 2025-04-25 154218](https://github.com/user-attachments/assets/c965d3e7-9d0a-4c10-a61f-73d36b2b225f)
 
 
 Result:
@@ -85,25 +146,33 @@ Use scanf to input the file name into the name array.
 5.	Return 0 to indicate successful program execution.
  
 Program:
+```
+#include <stdio.h>
 
-//type your code here
+int main() {
+    FILE *p;
+    char name[100];
 
+    printf("Enter the file name: ");
+    scanf("%s", name);
 
+    p = fopen(name, "w");
 
+    if (p == NULL) {
+        printf("Error creating file.\n");
+        return 1;
+    }
 
+    printf("File '%s' created successfully.\n", name);
+
+    fclose(p);
+    printf("File closed successfully.\n");
+
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
-
-
-
-
+![Screenshot 2025-04-25 154922](https://github.com/user-attachments/assets/479e0a42-12d8-4dad-8992-b5f1028fb5ca)
 
 
 Result:
@@ -132,12 +201,9 @@ Use scanf to input the file name into the name array and the number of strings i
 5.	Return 0 to indicate successful program execution.
  
 Program:
+```
 
-//type your code here
-
-
-
-
+```
 Output:
 
 
@@ -186,21 +252,34 @@ Algorithm:
 13.End the program by returning 0.
 
 Program:
+```
+#include <stdio.h>
+struct Student {
+    char name[50];
+    int age;
+    float marks;
+};
+void displayStudentDetails(struct Student s) {
+    printf("\nStudent Details:\n");
+    printf("Name: %s\n", s.name);
+    printf("Age: %d\n", s.age);
+    printf("Marks: %.2f\n", s.marks);
+}
 
-//type your code here
-
-
-
-
+int main() {
+    struct Student student1;
+    printf("Enter student's name: ");
+    scanf("%s", student1.name);
+    printf("Enter student's age: ");
+    scanf("%d", &student1.age);
+    printf("Enter student's marks: ");
+    scanf("%f", &student1.marks);
+    displayStudentDetails(student1);
+    return 0;
+}
+```
 Output:
-
-
-//paste your output here
-
-
-
-
-
+![Screenshot 2025-04-25 155914](https://github.com/user-attachments/assets/22868e8d-1c7c-4fec-8a1f-fd319a9d6b68)
 
 Result:
 Thus, the program is verified successfully
