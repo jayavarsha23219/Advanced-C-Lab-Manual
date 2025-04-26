@@ -1,9 +1,9 @@
 # Advanced-C-Lab-Manual
-EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
+## EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
 
-Aim: To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
+## Aim: To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
 
-Algorithm:
+## Algorithm:
 
 Declare structure eligible with age (integer) and n (character array)
 Declare variable e of type eligible
@@ -13,7 +13,8 @@ Print "Vaccine Eligibility: No" Else
 Print "Vaccine Eligibility: Yes"
 Print details (e.age, e.n)
 Return 0
-Program:
+
+## Program:
 ```
 #include <stdio.h>
 #define MAX_PEOPLE 100
@@ -49,18 +50,21 @@ int main() {
     return 0;
 }
 ```
-Output:
+## Output:
 
 ![Screenshot 2025-04-26 102920](https://github.com/user-attachments/assets/13a91fa2-b5a8-411f-874a-1ee92af0256c)
 
 
-Result: Thus, the program is verified successfully.
+## Result: 
+Thus, the program is verified successfully.
 
-EXP NO:2 C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION 
+---------------------------------------------------------------------------------------------------------------------------
 
-Aim: To write a C program for passing structure as function and returning a structure from a function
+## EXP NO:2 C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION 
 
-Algorithm:
+## Aim: To write a C program for passing structure as function and returning a structure from a function
+
+## Algorithm:
 
 Define structure numbers with members a and b.
 Declare variable n of type numbers.
@@ -69,7 +73,8 @@ Input values for a and b into n using scanf.
 Call the add function with n as an argument.
 Print the result returned by the add function.
 Return 0
-Program:
+
+## Program:
 ```
 #include <stdio.h>
 struct Student {
@@ -104,17 +109,21 @@ int main() {
     return 0;
 }
 ```
-Output:
+## Output:
 ![Screenshot 2025-04-26 103209](https://github.com/user-attachments/assets/0eb91b22-dc01-4526-a46f-7f2afba6f204)
 
 
-Result: Thus, the program is verified successfully
+## Result:
+Thus, the program is verified successfully
 
-EXP.NO:3 C PROGRAM TO READ A FILE NAME FROM USER AND WRITE THAT FILE USING FOPEN()
+-------------------------------------------------------------------------------------------------------------------------
 
-Aim: To write a C program to read a file name from user
+## EXP.NO:3 C PROGRAM TO READ A FILE NAME FROM USER AND WRITE THAT FILE USING FOPEN()
 
-Algorithm:
+## Aim:
+To write a C program to read a file name from user
+
+## Algorithm:
 
 Include the necessary header file stdio.h.
 Begin the main function.
@@ -130,7 +139,7 @@ Print a message indicating that the file has been closed.
 End the main function.
 Return 0 to indicate successful program execution.
 
-Program:
+## Program:
 ```
 #include <stdio.h>
 
@@ -172,16 +181,22 @@ int main() {
 }
 
 ```
-Output:
+## Output:
 
 ![Screenshot 2025-04-26 103756](https://github.com/user-attachments/assets/6a3d98b0-a2b8-47c0-8097-22ca6a6ce753)
 
 
-Result: Thus, the program is verified successfully
+## Result:
+Thus, the program is verified successfully
 
-EXP NO:4 PROGRAM TO READ A FILE NAME FROM USER, WRITE THAT FILE AND INSERT TEXT IN TO THAT FILE 
+-------------------------------------------------------------------------------------------------------------------
 
-Aim: To write a C program to read, a file and insert text in that file Algorithm:
+## EXP NO:4 PROGRAM TO READ A FILE NAME FROM USER, WRITE THAT FILE AND INSERT TEXT IN TO THAT FILE 
+
+## Aim:
+To write a C program to read, a file and insert text in that file Algorithm:
+
+## Algorithm:
 
 Include the necessary header file stdio.h.
 Begin the main function.
@@ -221,17 +236,23 @@ int main() {
     return 0;
 }
 ```
-Output:
+## Output:
 ![WhatsApp Image 2025-04-26 at 10 45 30_800ec98d](https://github.com/user-attachments/assets/9ef75d4a-d7dd-42a3-a827-c0882faee8f2)
 
 
-Result: Thus, the program is verified successfully
+## Result: 
+Thus, the program is verified successfully
 
-Ex No 5 : C PROGRAM TO DISPLAY STUDENT DETAILS USING STRUCTURE
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-Aim: The aim of this program is to dynamically allocate memory to store information about multiple subjects (name and marks), input the details for each subject, and then display the stored information. Finally, it frees the allocated memory to prevent memory leaks.
+## Ex No 5 : C PROGRAM TO DISPLAY STUDENT DETAILS USING STRUCTURE
 
-Algorithm: 1.Input the number of subjects.
+## Aim:
+The aim of this program is to dynamically allocate memory to store information about multiple subjects (name and marks), input the details for each subject, and then display the stored information. Finally, it frees the allocated memory to prevent memory leaks.
+
+## Algorithm:
+
+1.Input the number of subjects.
 
 2.Read the integer value n from the user, which represents the number of subjects.
 
@@ -257,7 +278,7 @@ Algorithm: 1.Input the number of subjects.
 
 13.End the program by returning 0.
 
-Program:
+## Program:
 ```
 #include <stdio.h>
 struct Student {
@@ -284,8 +305,9 @@ int main() {
     return 0;
 }
 ```
-Output:
+## Output:
 ![Screenshot 2025-04-26 104813](https://github.com/user-attachments/assets/f0f9e68f-5cc4-4c34-a260-2a4a20379c42)
 
 
-Result: Thus, the program is verified successfully
+## Result:
+Thus, the program is verified successfully
