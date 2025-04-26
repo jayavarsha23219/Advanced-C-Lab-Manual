@@ -1,7 +1,8 @@
 # Advanced-C-Lab-Manual
 ## EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
 
-## Aim: To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
+## Aim:
+To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
 
 ## Algorithm:
 
@@ -62,7 +63,8 @@ Thus, the program is verified successfully.
 
 ## EXP NO:2 C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION 
 
-## Aim: To write a C program for passing structure as function and returning a structure from a function
+## Aim:
+To write a C program for passing structure as function and returning a structure from a function
 
 ## Algorithm:
 
